@@ -1,10 +1,10 @@
 // Semillas embebidas en el código — las consume la fuente "memoria".
 // Coinciden exactamente con mock/semillas.json (estado inicial de las pantallas).
-import type { Producto, Cliente, Pedido } from "../dominio";
+import type { Semillas } from "./motor-memoria";
 
-export const SEMILLAS: { productos: Producto[]; clientes: Cliente[]; pedidos: Pedido[] } = {
+export const SEMILLAS: Semillas = {
   productos: [
-    { id: 1, nombre: "Pan campesino",     precioUnitario: 8.5,  disponibles: 10, activo: true  },
+    { id: 1, nombre: "Pan campesino",      precioUnitario: 8.5,  disponibles: 10, activo: true  },
     { id: 2, nombre: "Torta de chocolate", precioUnitario: 6.0,  disponibles: 4,  activo: true  },
     { id: 3, nombre: "Empanada de queso",  precioUnitario: 5.0,  disponibles: 2,  activo: true  },
     { id: 4, nombre: "Torta de bodas",     precioUnitario: 15.0, disponibles: 3,  activo: false },
